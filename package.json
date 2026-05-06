@@ -1,0 +1,31 @@
+{
+  "name": "astropaper-local-admin",
+  "version": "0.1.0",
+  "description": "A local writing and site-settings admin for AstroPaper.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "astropaper-local-admin": "./bin/install.mjs"
+  },
+  "files": [
+    "bin",
+    "templates",
+    "README.md",
+    "SECURITY.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "astro",
+    "astropaper",
+    "markdown",
+    "blog",
+    "admin"
+  ],
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "scripts": {
+    "install:local": "node ./bin/install.mjs",
+    "check": "node --check ./bin/install.mjs"
+  }
+}
