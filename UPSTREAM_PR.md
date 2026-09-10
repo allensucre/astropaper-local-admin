@@ -17,8 +17,10 @@ editing surface while preserving the current Markdown-first workflow.
 
 - `/admin` writing workspace
 - Post list with search and draft/published filtering
-- Markdown editor with preview and split mode
-- Draft creation
+- Markdown editor with write/preview modes and consistent single-line breaks
+- Draft creation and post deletion
+- Separate personal profile editor
+- Chinese labels and status messages
 - Local settings editor for common site identity fields and social links
 - Dev-only middleware mounted under `/api/admin/*`
 
@@ -39,3 +41,7 @@ For AstroPaper core, this could be introduced as one of:
 
 The standalone repository keeps the proposal reviewable before any upstream
 maintainer decision.
+
+## Review Status
+
+Proposal only: no upstream PR has been submitted. User approval is required before submission. Before opening a PR, port this feature to a fresh fork of the current upstream, verify installation and browser interactions there, and review the local write API security model. Do not include personal content or the personal blog dependency upgrade.

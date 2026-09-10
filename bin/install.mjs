@@ -69,12 +69,15 @@ const main = async () => {
     throw new Error("package.json was not found. Run this from an AstroPaper project root.");
   }
 
+  await copyTemplate("src/styles/admin-typography.css");
   await copyTemplate("src/pages/admin.astro");
   await copyTemplate("src/utils/adminDevServer.ts");
   await patchAstroConfig();
 
   console.log("");
-  console.log("AstroPaper Local Admin installed.");
+  console.log("AstroPaper Local Admin templates installed. Install dependencies before starting:");
+  console.log("  corepack pnpm add marked@^18 dompurify@^3 remark-breaks@^4");
+  console.log("See README.md for frontend line-break configuration.");
   console.log("Start your site with:");
   console.log("  corepack pnpm run dev --host 127.0.0.1");
   console.log("Then open:");

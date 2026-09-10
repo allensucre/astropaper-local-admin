@@ -22,7 +22,7 @@
     "admin"
   ],
   "engines": {
-    "node": ">=18.17.0"
+    "node": ">=22.14.0"
   },
   "scripts": {
     "install:local": "node ./bin/install.mjs",
